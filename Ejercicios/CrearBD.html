@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear base de datos y tablas/restricciones</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../Styles.css">
+</head>
+<body  class="Ventana">
+    <div class="container-fluid">
+    <div class="row flex-nowrap">
+        <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-dark">
+            <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
+                <a href="/" class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+                    <span class="fs-5 d-none d-sm-inline">Ejercicios de MySQL</span>
+                </a>
+                <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
+                    <li class="nav-item">
+                        <a href="../index.html" class="nav-link align-middle px-0">
+                            <i class="fs-4 bi-house"></i> 1.-<span class="ms-1 d-none d-sm-inline">Introduccion a base de datos relacional
+                            </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="Diseño.html" class="nav-link align-middle px-0">
+                            <i class="fs-4 bi-house"></i> 2.-<span class="ms-1 d-none d-sm-inline">Diseño de base de datos
+                            </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="CrearBD.html" class="nav-link align-middle px-0">
+                            <i class="fs-4 bi-house"></i> 3.-<span class="ms-1 d-none d-sm-inline">Crear base de datos y tablas/Restricciones
+                            </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="Modificar.html" class="nav-link align-middle px-0">
+                            <i class="fs-4 bi-house"></i> 4.-<span class="ms-1 d-none d-sm-inline">Modificar y eliminar tablas
+                            </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="Foreign.html" class="nav-link align-middle px-0">
+                            <i class="fs-4 bi-house"></i> 5.-<span class="ms-1 d-none d-sm-inline">Foreign key/Normalizacion
+                            </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="Insertar.html" class="nav-link align-middle px-0">
+                            <i class="fs-4 bi-house"></i> 6.-<span class="ms-1 d-none d-sm-inline">Insertar registros
+                            </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="Eliminar.html" class="nav-link align-middle px-0">
+                            <i class="fs-4 bi-house"></i> 7.-<span class="ms-1 d-none d-sm-inline">Eliminar registros
+                            </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="Actualizar.html" class="nav-link align-middle px-0">
+                            <i class="fs-4 bi-house"></i> 8.-<span class="ms-1 d-none d-sm-inline">Actualizar Registros
+                            </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="Seleccionar.html" class="nav-link align-middle px-0">
+                            <i class="fs-4 bi-house"></i> 9.-<span class="ms-1 d-none d-sm-inline">Seleccionr registros
+                            </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="Operadores.html" class="nav-link align-middle px-0">
+                            <i class="fs-4 bi-house"></i> 10.-<span class="ms-1 d-none d-sm-inline">Operadores logicos y de comparacion
+                            </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="Orderby.html" class="nav-link align-middle px-0">
+                            <i class="fs-4 bi-house"></i> 11.-<span class="ms-1 d-none d-sm-inline">Order by/ limit/ top
+                            </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="FuncionesTexto.html" class="nav-link align-middle px-0">
+                            <i class="fs-4 bi-house"></i> 12.-<span class="ms-1 d-none d-sm-inline">Funciones de texto
+                            </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="FuncionesNumericas.html" class="nav-link align-middle px-0">
+                            <i class="fs-4 bi-house"></i> 13.-<span class="ms-1 d-none d-sm-inline">Funciones numericas
+                            </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="Fechas.html" class="nav-link align-middle px-0">
+                            <i class="fs-4 bi-house"></i> 14.-<span class="ms-1 d-none d-sm-inline">Manejo de fechas y horas
+                            </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="Combinaciones.html" class="nav-link align-middle px-0">
+                            <i class="fs-4 bi-house"></i> 15.-<span class="ms-1 d-none d-sm-inline">Combinaciones internas y externas
+                            </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="Subconsultas.html" class="nav-link align-middle px-0">
+                            <i class="fs-4 bi-house"></i> 16.-<span class="ms-1 d-none d-sm-inline">Subconsultas
+                            </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="Vistas.html" class="nav-link align-middle px-0">
+                            <i class="fs-4 bi-house"></i> 17.-<span class="ms-1 d-none d-sm-inline">Creacion de vistas
+                            </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="Agrupacion.html" class="nav-link align-middle px-0">
+                            <i class="fs-4 bi-house"></i> 18.-<span class="ms-1 d-none d-sm-inline">Agrupacion de resultados
+                            </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="CombinacionesEspeciales.html" class="nav-link align-middle px-0">
+                            <i class="fs-4 bi-house"></i> 19.- <span class="ms-1 d-none d-sm-inline">Combinaciones especiales
+                            </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="ProcedimientoAlmacenado.html" class="nav-link align-middle px-0">
+                            <i class="fs-4 bi-house"></i> 20.-<span class="ms-1 d-none d-sm-inline">Procedimiento almacenado
+                            </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="Triggers.html" class="nav-link align-middle px-0">
+                            <i class="fs-4 bi-house"></i> 21.-<span class="ms-1 d-none d-sm-inline">Triggers
+                            </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="Indices.html" class="nav-link align-middle px-0">
+                            <i class="fs-4 bi-house"></i> 22.-<span class="ms-1 d-none d-sm-inline">Indices
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+                <hr>
+            </div>
+        </div>
+        <div class="col py-3">
+            <h1 class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+                Crear base de datos y tablas/restricciones
+            </h1>
+            <img src="img/CrearBD/1.jpg" alt="" width="889px" height="500px">
+            <img src="img/CrearBD/2.jpg" alt="" width="889px" height="500px">
+            <img src="img/CrearBD/3.jpg" alt="" width="889px" height="500px">
+            <img src="img/CrearBD/4.jpg" alt="" width="889px" height="500px">
+            <img src="img/CrearBD/5.jpg" alt="" width="889px" height="500px">
+            <img src="img/CrearBD/6.jpg" alt="" width="889px" height="500px">
+            <img src="img/CrearBD/7.jpg" alt="" width="889px" height="500px">
+            <img src="img/CrearBD/8.jpg" alt="" width="889px" height="500px">
+            <img src="img/CrearBD/9.jpg" alt="" width="889px" height="500px">
+            <img src="img/CrearBD/10.jpg" alt="" width="889px" height="500px">
+            <img src="img/CrearBD/11.jpg" alt="" width="889px" height="500px">
+        </div>
+    </div>
+</div>
+
+
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
