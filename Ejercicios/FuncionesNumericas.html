@@ -66,7 +66,7 @@
                     </li>
                     <li class="nav-item">
                         <a href="Seleccionar.html" class="nav-link align-middle px-0">
-                            <i class="fs-4 bi-house"></i> 9.-<span class="ms-1 d-none d-sm-inline">Seleccionr registros
+                            <i class="fs-4 bi-house"></i> 9.-<span class="ms-1 d-none d-sm-inline">Seleccionar registros
                             </span>
                         </a>
                     </li>
@@ -158,6 +158,122 @@
             </h1>
             <img src="img/FuncionesNumericas/1.jpg" alt="" width="889px" height="500px">
             <img src="img/FuncionesNumericas/2.jpg" alt="" width="889px" height="500px">
+            <hr>
+            <h1 class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+                Ejemplos
+            </h1>
+            <hr>
+            <h2 class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">ABS()</h2>
+    <p class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+        Devuelve el valor absoluto de un número, eliminando el signo negativo.
+    </p>
+    <pre class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+SELECT ABS(-50) AS Resultado;
+-- Resultado: 50
+    </pre>
+    <hr>
+    <h2 class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">CEILING()</h2>
+    <p class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+        Redondea un número hacia arriba al entero más cercano.
+    </p>
+    <pre class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+SELECT CEILING(8.2) AS Resultado;
+-- Resultado: 9
+    </pre>
+    <hr>
+    <h2 class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">FLOOR()</h2>
+    <p class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+        Redondea un número hacia abajo al entero más cercano.
+    </p>
+    <pre class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+SELECT FLOOR(8.9) AS Resultado;
+-- Resultado: 8
+    </pre>
+    <hr>
+    <h2 class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">ROUND()</h2>
+    <p class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+        Redondea un número a la cantidad de decimales indicada.
+    </p>
+    <pre class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+SELECT ROUND(12.5678, 2) AS Resultado;
+-- Resultado: 12.57
+    </pre>
+    <hr>
+    <h2 class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">TRUNCATE()</h2>
+    <p class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+        Elimina decimales sin realizar redondeo.
+    </p>
+    <pre class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+SELECT TRUNCATE(12.5678, 2) AS Resultado;
+-- Resultado: 12.56
+    </pre>
+        <hr>
+    <h2 class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">SIGN()</h2>
+    <p class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+        Indica si un número es positivo, negativo o cero.
+    </p>
+    <pre class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+SELECT SIGN(-15) AS Resultado;
+-- Resultado: -1
+
+SELECT SIGN(15) AS Resultado;
+-- Resultado: 1
+
+SELECT SIGN(0) AS Resultado;
+-- Resultado: 0
+    </pre>
+
+
+<hr>
+<h2 class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">SUM()</h2>
+
+    <pre class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+SELECT SUM(salario) AS TotalSalarios
+FROM Empleados;
+    </pre>
+
+<hr>
+    <h2 class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">AVG()</h2>
+
+    <pre class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+SELECT AVG(salario) AS PromedioSalario
+FROM Empleados;
+    </pre>
+
+    <hr>
+    <h2 class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">COUNT()</h2>
+
+    <pre class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+SELECT COUNT(*) AS TotalEmpleados
+FROM Empleados;
+    </pre>
+
+
+    <p class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+        Contando los valores de una columna específica
+    </p>
+
+    <pre class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+SELECT COUNT(salario) AS RegistrosSalario
+FROM Empleados;
+    </pre>
+    <hr>
+    <h2 class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">MAX()</h2>
+
+    <pre class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+SELECT MAX(salario) AS SalarioMayor
+FROM Empleados;
+    </pre>
+
+    <hr>
+    <h2 class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">MIN()</h2>
+
+    <pre class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+SELECT MIN(salario) AS SalarioMenor
+FROM Empleados;
+    </pre>
+
+
         </div>
     </div>
 </div>

@@ -66,7 +66,7 @@
                     </li>
                     <li class="nav-item">
                         <a href="Seleccionar.html" class="nav-link align-middle px-0">
-                            <i class="fs-4 bi-house"></i> 9.-<span class="ms-1 d-none d-sm-inline">Seleccionr registros
+                            <i class="fs-4 bi-house"></i> 9.-<span class="ms-1 d-none d-sm-inline">Seleccionar registros
                             </span>
                         </a>
                     </li>
@@ -157,6 +157,49 @@
                 Insertar registros
             </h1>
             <img src="img/Insertar.jpeg" alt="" width="320px" height="800px">
+            <hr>
+            <h1 class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+                Ejemplos
+            </h1>
+            <hr>
+            <h2 class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">Insertar un registro</h2>
+
+            <pre><code class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+            INSERT INTO Estudiantes
+            (idEstudiante, nombre, edad)
+            VALUES
+            (1, 'Juan', 20);
+            </code></pre>
+            <hr>
+            <h2 class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">Insertar varios registros</h2>
+
+            <pre><code class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+            INSERT INTO Estudiantes
+            (idEstudiante, nombre, edad)
+            VALUES
+            (1, 'Juan', 20),
+            (2, 'Ana', 21),
+            (3, 'Carlos', 19);
+            </code></pre>
+            <hr>
+            <h2 class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">Insertar columnas específicas</h2>
+
+            <pre><code class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+            INSERT INTO Estudiantes
+            (nombre, edad)
+            VALUES
+            ('María', 22);
+            </code></pre>
+            <hr>
+            <h2 class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">Importar CSV</h2>
+
+            <pre><code class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+            LOAD DATA INFILE 'C:/datos/estudiantes.csv'
+            INTO TABLE Estudiantes
+            FIELDS TERMINATED BY ','
+            LINES TERMINATED BY '\n'
+            IGNORE 1 ROWS;
+            </code></pre>
         </div>
     </div>
 </div>

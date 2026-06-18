@@ -66,7 +66,7 @@
                     </li>
                     <li class="nav-item">
                         <a href="Seleccionar.html" class="nav-link align-middle px-0">
-                            <i class="fs-4 bi-house"></i> 9.-<span class="ms-1 d-none d-sm-inline">Seleccionr registros
+                            <i class="fs-4 bi-house"></i> 9.-<span class="ms-1 d-none d-sm-inline">Seleccionar registros
                             </span>
                         </a>
                     </li>
@@ -164,6 +164,76 @@
             <img src="img/OperadoresLogicos/6.jpg" alt="" width="889px" height="500px">
             <img src="img/OperadoresLogicos/7.jpg" alt="" width="889px" height="500px">
             <img src="img/OperadoresLogicos/8.jpg" alt="" width="889px" height="500px">
+            <hr>
+            <h1 class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+                Ejemplos
+            </h1>
+            <hr>
+            <h2 class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">Operadores de comparacion</h2>
+            <h3 class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">Igual</h3>
+            <pre><code class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+            SELECT *
+            FROM empleados
+            WHERE departamento = 'Ventas';
+            </code></pre>
+            <hr>
+            <h3 class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">Mayor que</h3>
+            <pre><code class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+            UPDATE empleados
+            SET bono = 1000
+            WHERE salario > 5000;
+            </code></pre>
+            <hr>
+            <h3 class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">Menor que</h3>
+            <pre><code class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+            DELETE FROM empleados
+            WHERE salario < 2000;
+            </code></pre>
+            <hr>
+            <h3 class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">Mayor o igual</h3>
+            <pre><code class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+            SELECT *
+            FROM empleados
+            WHERE salario >= 6000;
+            </code></pre>
+            <hr>
+            <h3 class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">Menor o igual</h3>
+            <pre><code class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+            SELECT *
+            FROM empleados
+            WHERE edad <= 25;
+            </code></pre>
+            <hr>
+            <h3 class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">Diferente</h3>
+            <pre><code class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+            UPDATE empleados
+            SET estado = 'Activo'
+            WHERE departamento <> 'Ventas';
+            </code></pre>
+            <hr>
+            <h2 class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">Operadores logicos</h2>
+            <hr>
+            <h3 class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">AND</h3>
+            <pre><code class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+            SELECT *
+            FROM empleados
+            WHERE departamento = 'Ventas'
+            AND salario > 5000;
+            </code></pre>
+            <hr>
+            <h3 class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">OR</h3>
+            <pre><code class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+            UPDATE empleados
+            SET estado = 'Capacitación'
+            WHERE departamento = 'Ventas'
+            OR departamento = 'Marketing';
+            </code></pre>
+            <hr>
+            <h3 class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">NOT</h3>
+            <pre><code class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+            DELETE FROM empleados
+            WHERE NOT departamento = 'Administración';
+            </code></pre>
         </div>
     </div>
 </div>

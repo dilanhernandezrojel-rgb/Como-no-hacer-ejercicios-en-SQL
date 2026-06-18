@@ -66,7 +66,7 @@
                     </li>
                     <li class="nav-item">
                         <a href="Seleccionar.html" class="nav-link align-middle px-0">
-                            <i class="fs-4 bi-house"></i> 9.-<span class="ms-1 d-none d-sm-inline">Seleccionr registros
+                            <i class="fs-4 bi-house"></i> 9.-<span class="ms-1 d-none d-sm-inline">Seleccionar registros
                             </span>
                         </a>
                     </li>
@@ -174,6 +174,60 @@
             <img src="img/FuncionesTexto/16.jpg" alt="" width="889px" height="500px">
             <img src="img/FuncionesTexto/17.jpg" alt="" width="889px" height="500px">
             <img src="img/FuncionesTexto/18.jpg" alt="" width="889px" height="500px">
+            <hr>
+            <h1 class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+                Ejemplos
+            </h1>
+            <hr>
+            <h3 class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">Mayusculas</h3>
+            <pre><code class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+            select upper(nombre) as NOMBRE_MAYUSCULAS from alumno;
+            </code></pre>
+            <hr>
+            <h3 class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">Minusculas</h3>
+            <pre><code class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+            select lower(ciudad) from alumno;
+            </code></pre>
+            <hr>
+            <h3 class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">Elimina espacios en blanco</h3>
+            <pre><code class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+            select trim(nombre) as NOMBRE_SIN_ESPACIOS from alumno;
+            </code></pre>
+            <hr>
+            <h3 class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">Substrae una parte especifica del registro</h3>
+            <pre><code class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+            select substring(nombre, 1,2) as subcadena from alumno;
+            </code></pre>
+            <hr>
+            <h3 class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">Busca un caracter especifico en el registro y muestra su posicion</h3>
+            <pre><code class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+            SELECT email, instr(email, '@') as posicionarroba from alumno
+            </code></pre>
+            <hr>
+            <h3 class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">Junta dos o mas cadenas en una sola</h3>
+            <pre><code class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+            SELECT CONCAT(nombre, " ", apellido) as nombre_completo from alumno;
+            </code></pre>
+            <hr>
+            <h3 class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">Remplaza caracteres</h3>
+            <pre><code class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+            SELECT replace((SELECT replace("hola", 'o', 'ofo') as IdiomaF), 'a', 'afa') as IdiomaF;
+            </code></pre>
+            <hr>
+            <h3 class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">Muestra la cadena de texto al revez</h3>
+            <pre><code class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+            SELECT reverse("Anita lava la tina");
+            </code></pre>
+            <hr>
+            <h3 class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">Muestra el tamaño de la cadena en numeros</h3>
+            <pre><code class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+            SELECT nombre,length(nombre) as LONGITUD from alumno;
+            </code></pre>
+            <hr>
+            <h3 class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">Busca todos los nombres donde este 'a' en la segunda posicion sin importar como empieza ni como termina</h3>
+            <pre><code class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+            SELECT NOMBRE FROM alumno WHERE nombre LIKE "_a%";
+            </code></pre>
         </div>
     </div>
 </div>

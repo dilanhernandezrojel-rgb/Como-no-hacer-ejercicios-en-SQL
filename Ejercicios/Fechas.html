@@ -66,7 +66,7 @@
                     </li>
                     <li class="nav-item">
                         <a href="Seleccionar.html" class="nav-link align-middle px-0">
-                            <i class="fs-4 bi-house"></i> 9.-<span class="ms-1 d-none d-sm-inline">Seleccionr registros
+                            <i class="fs-4 bi-house"></i> 9.-<span class="ms-1 d-none d-sm-inline">Seleccionar registros
                             </span>
                         </a>
                     </li>
@@ -163,6 +163,298 @@
             <img src="img/Fechas/5.jpg" alt="" width="889px" height="500px">
             <img src="img/Fechas/6.jpg" alt="" width="889px" height="500px">
             <img src="img/Fechas/7.jpg" alt="" width="889px" height="500px">
+            <hr>
+            <h1 class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+                Ejemplos
+            </h1>
+            <hr>
+            <h2 class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">NOW()</h2>
+
+<p class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">Devuelve la fecha y hora actuales del sistema.</p>
+
+<pre class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+SELECT NOW();
+
+Resultado:
+2025-06-17 14:30:45
+</pre>
+
+<h2 class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">CURDATE()</h2>
+
+<p class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">Devuelve únicamente la fecha actual.</p>
+
+<pre class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+SELECT CURDATE();
+
+Resultado:
+2025-06-17
+</pre>
+
+<h2 class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">CURTIME()</h2>
+
+<p class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">Devuelve únicamente la hora actual.</p>
+
+<pre class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+SELECT CURTIME();
+
+Resultado:
+14:30:45
+</pre>
+
+<h2 class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">YEAR()</h2>
+
+<p class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">Obtiene el año de una fecha.</p>
+
+<pre class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+SELECT YEAR('2025-06-17');
+
+Resultado:
+2025
+</pre>
+
+<h2 class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">MONTH()</h2>
+
+<p class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">Obtiene el número del mes.</p>
+
+<pre class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+SELECT MONTH('2025-06-17');
+
+Resultado:
+6
+</pre>
+
+<h2 class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">DAY()</h2>
+
+<p class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">Obtiene el día del mes.</p>
+
+<pre class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+SELECT DAY('2025-06-17');
+
+Resultado:
+17
+</pre>
+
+<h2 class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">HOUR()</h2>
+
+<p class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">Obtiene la hora.</p>
+
+<pre class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+SELECT HOUR('2025-06-17 14:30:45');
+
+Resultado:
+14
+</pre>
+
+<h2 class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">MINUTE()</h2>
+
+<p class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">Obtiene los minutos.</p>
+
+<pre class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+SELECT MINUTE('2025-06-17 14:30:45');
+
+Resultado:
+30
+</pre>
+
+<h2 class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">SECOND()</h2>
+
+<p class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">Obtiene los segundos.</p>
+
+<pre class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+SELECT SECOND('2025-06-17 14:30:45');
+
+Resultado:
+45
+</pre>
+
+<h2 class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">DAYNAME()</h2>
+
+<p class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">Devuelve el nombre del día de la semana.</p>
+
+<pre class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+SELECT DAYNAME('2025-06-17');
+
+Resultado:
+Tuesday
+</pre>
+
+<h2 class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">MONTHNAME()</h2>
+
+<p class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">Devuelve el nombre del mes.</p>
+
+<pre class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+SELECT MONTHNAME('2025-06-17');
+
+Resultado:
+June
+</pre>
+
+<h2 class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">DAYOFWEEK()</h2>
+
+<p class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">Devuelve el número del día de la semana.</p>
+
+<pre class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+SELECT DAYOFWEEK('2025-06-17');
+
+Resultado:
+3
+</pre>
+
+<p class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+(En MySQL: 1 = Domingo, 2 = Lunes, ..., 7 = Sábado)
+</p>
+
+<h2 class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">DAYOFYEAR()</h2>
+
+<p class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">Devuelve el número de día dentro del año.</p>
+
+<pre class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+SELECT DAYOFYEAR('2025-06-17');
+
+Resultado:
+168
+</pre>
+
+<h2 class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">WEEK()</h2>
+
+<p class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">Obtiene la semana del año.</p>
+
+<pre class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+SELECT WEEK('2025-06-17');
+
+Resultado:
+24
+</pre>
+
+<h2 class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">DATE()</h2>
+
+<p class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">Extrae únicamente la fecha de un valor fecha-hora.</p>
+
+<pre class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+SELECT DATE('2025-06-17 14:30:45');
+
+Resultado:
+2025-06-17
+</pre>
+
+<h2 class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">TIME()</h2>
+
+<p class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">Extrae únicamente la hora.</p>
+
+<pre class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+SELECT TIME('2025-06-17 14:30:45');
+
+Resultado:
+14:30:45
+</pre>
+
+<h2 class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">DATE_ADD()</h2>
+
+<p class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">Agrega una cantidad de tiempo a una fecha.</p>
+
+<pre class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+SELECT DATE_ADD('2025-06-17', INTERVAL 10 DAY);
+
+Resultado:
+2025-06-27
+</pre>
+
+<p class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">También se pueden agregar meses o años.</p>
+
+<pre class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+SELECT DATE_ADD('2025-06-17', INTERVAL 2 MONTH);
+
+Resultado:
+2025-08-17
+</pre>
+
+<h2 class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">DATE_SUB()</h2>
+
+<p class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">Resta una cantidad de tiempo a una fecha.</p>
+
+<pre class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+SELECT DATE_SUB('2025-06-17', INTERVAL 15 DAY);
+
+Resultado:
+2025-06-02
+</pre>
+
+<h2 class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">DATEDIFF()</h2>
+
+<p class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">Calcula la diferencia en días entre dos fechas.</p>
+
+<pre class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+SELECT DATEDIFF('2025-06-30', '2025-06-17');
+
+Resultado:
+13
+</pre>
+
+<h2 class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">TIMESTAMPDIFF()</h2>
+
+<p class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">Calcula diferencias en años, meses, días, horas o minutos.</p>
+
+<pre class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+SELECT TIMESTAMPDIFF(YEAR,
+'2000-05-10',
+'2025-06-17');
+
+Resultado:
+25
+</pre>
+
+<h2 class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">LAST_DAY()</h2>
+
+<p class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">Obtiene el último día del mes.</p>
+
+<pre class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+SELECT LAST_DAY('2025-06-17');
+
+Resultado:
+2025-06-30
+</pre>
+
+<h2 class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">EXTRACT()</h2>
+
+<p class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">Extrae una parte específica de una fecha.</p>
+
+<pre class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+SELECT EXTRACT(YEAR FROM '2025-06-17');
+
+Resultado:
+2025
+</pre>
+
+<pre class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+SELECT EXTRACT(MONTH FROM '2025-06-17');
+
+Resultado:
+6
+</pre>
+
+<h2 class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">STR_TO_DATE()</h2>
+
+<p class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">Convierte una cadena de texto en una fecha.</p>
+
+<pre class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+SELECT STR_TO_DATE('17/06/2025','%d/%m/%Y');
+
+Resultado:
+2025-06-17
+</pre>
+
+<h2 class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">DATE_FORMAT()</h2>
+
+<p class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">Permite mostrar una fecha con un formato personalizado.</p>
+
+<pre class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+SELECT DATE_FORMAT('2025-06-17',
+'%d/%m/%Y');
+
+Resultado:
+17/06/2025
+</pre>
+
         </div>
     </div>
 </div>

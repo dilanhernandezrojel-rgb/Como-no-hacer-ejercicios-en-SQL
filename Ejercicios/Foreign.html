@@ -66,7 +66,7 @@
                     </li>
                     <li class="nav-item">
                         <a href="Seleccionar.html" class="nav-link align-middle px-0">
-                            <i class="fs-4 bi-house"></i> 9.-<span class="ms-1 d-none d-sm-inline">Seleccionr registros
+                            <i class="fs-4 bi-house"></i> 9.-<span class="ms-1 d-none d-sm-inline">Seleccionar registros
                             </span>
                         </a>
                     </li>
@@ -157,6 +157,50 @@
                 Foreign key/Normalizacion
             </h1>
             <img src="img/Foreignkey.jpeg" alt="" width="512px" height="768px">
+            <hr>
+            <h1 class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+                Ejemplos
+            </h1>
+            <hr>
+            <h2 class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">Tabla con clave primaria</h2>
+
+            <pre><code class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+            CREATE TABLE Estudiantes (
+                idEstudiante INT PRIMARY KEY,
+                nombre VARCHAR(100),
+                edad INT
+            );
+            </code></pre>
+            <h2 class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">El identificador se genera automaticamente</h2>
+            <pre><code class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+            CREATE TABLE Estudiantes (
+                idEstudiante INT AUTO_INCREMENT PRIMARY KEY,
+                nombre VARCHAR(100),
+                edad INT
+            );
+            </code></pre>
+            <hr>
+            <h2 class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">Tabla principal</h2>
+
+            <pre><code class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+            CREATE TABLE Carreras (
+                idCarrera INT PRIMARY KEY,
+                nombreCarrera VARCHAR(100)
+            );
+            </code></pre>
+            <hr>
+            <h2 class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">Tabla con clave foránea</h2>
+
+            <pre><code class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+            CREATE TABLE Estudiantes (
+                idEstudiante INT PRIMARY KEY,
+                nombre VARCHAR(100),
+                idCarrera INT,
+    
+                FOREIGN KEY (idCarrera)
+                REFERENCES Carreras(idCarrera)
+            );
+            </code></pre>
         </div>
     </div>
 </div>

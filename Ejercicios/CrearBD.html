@@ -66,7 +66,7 @@
                     </li>
                     <li class="nav-item">
                         <a href="Seleccionar.html" class="nav-link align-middle px-0">
-                            <i class="fs-4 bi-house"></i> 9.-<span class="ms-1 d-none d-sm-inline">Seleccionr registros
+                            <i class="fs-4 bi-house"></i> 9.-<span class="ms-1 d-none d-sm-inline">Seleccionar registros
                             </span>
                         </a>
                     </li>
@@ -167,6 +167,35 @@
             <img src="img/CrearBD/9.jpg" alt="" width="889px" height="500px">
             <img src="img/CrearBD/10.jpg" alt="" width="889px" height="500px">
             <img src="img/CrearBD/11.jpg" alt="" width="889px" height="500px">
+            <hr>
+            <h1 class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+                Ejemplos
+            </h1>
+            <hr>
+            <h2 class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">Crear una base de datos</h2>
+
+            <p class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">La siguiente instrucción crea una base de datos llamada "Escuela".</p>
+
+            <pre><code class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+            CREATE DATABASE Escuela;
+            </code></pre>
+            <h2 class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">Seleccionar la base de datos</h2>
+
+            <pre><code class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+            USE Escuela;
+            </code></pre>
+            <h2 class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">Crear una tabla</h2>
+
+            <p class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">La siguiente tabla almacenará información de estudiantes.</p>
+
+            <pre><code class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+            CREATE TABLE Estudiantes (
+            id INT PRIMARY KEY AUTO_INCREMENT,
+            nombre VARCHAR(100) NOT NULL,
+            edad INT,
+            correo VARCHAR(150)
+            );
+            </code></pre>
         </div>
     </div>
 </div>

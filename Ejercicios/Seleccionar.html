@@ -66,7 +66,7 @@
                     </li>
                     <li class="nav-item">
                         <a href="Seleccionar.html" class="nav-link align-middle px-0">
-                            <i class="fs-4 bi-house"></i> 9.-<span class="ms-1 d-none d-sm-inline">Seleccionr registros
+                            <i class="fs-4 bi-house"></i> 9.-<span class="ms-1 d-none d-sm-inline">Seleccionar registros
                             </span>
                         </a>
                     </li>
@@ -157,6 +157,80 @@
                 Seleccionar registros
             </h1>
             <img src="img/SELECT.jpeg" alt="" width="512px" height="768px">
+            <hr>
+            <h1 class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+                Ejemplos
+            </h1>
+            <hr>
+            <h2 class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">Seleccionar todos los registros</h2>
+            <pre><code class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+            SELECT *
+            FROM empleados;
+            </code></pre>
+            <hr>
+            <h2 class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">Seleccionar columnas especificas</h2>
+            <pre><code class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+            SELECT nombre, salario, departamento
+            FROM empleados;
+            </code></pre>
+            <hr>
+            <h2 class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">Seleccionar un registro especifico con WHERE</h2>
+            <pre><code class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+            SELECT *
+            FROM empleados
+            WHERE id = 1;
+            </code></pre>
+            <hr>
+            <h2 class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">Seleccionar un registro con operadores de comparacion</h2>
+            <pre><code class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+            SELECT *
+            FROM empleados
+            WHERE salario > 5000;
+            </code></pre>
+            <hr>
+            <h2 class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">Seleccionar usando AND</h2>
+            <pre><code class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+            SELECT *
+            FROM empleados
+            WHERE departamento = 'Ventas'
+            AND salario > 5000;
+            </code></pre>
+            <hr>
+            <h2 class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">Seleccionar usando OR</h2>
+            <pre><code class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+            SELECT *
+            FROM empleados
+            WHERE departamento = 'Ventas'
+            OR departamento = 'Marketing';
+            </code></pre>
+            <hr>
+            <h2 class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">Seleccionar usando NOT</h2>
+            <pre><code class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+            SELECT *
+            FROM empleados
+            WHERE NOT departamento = 'Ventas';
+            </code></pre>
+            <hr>
+            <h2 class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">Seleccionar por rangos</h2>
+            <pre><code class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+            SELECT *
+            FROM empleados
+            WHERE salario BETWEEN 3000 AND 6000;
+            </code></pre>
+            <hr>
+            <h2 class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">Seleccionar valores especificos</h2>
+            <pre><code class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+            SELECT *
+            FROM empleados
+            WHERE departamento IN ('Ventas', 'Marketing', 'RH');
+            </code></pre>
+            <hr>
+            <h2 class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">Seleccionar con patrones</h2>
+            <pre><code class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+            SELECT *
+            FROM empleados
+            WHERE nombre LIKE 'Juan%';
+            </code></pre>
         </div>
     </div>
 </div>

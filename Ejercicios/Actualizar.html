@@ -66,7 +66,7 @@
                     </li>
                     <li class="nav-item">
                         <a href="Seleccionar.html" class="nav-link align-middle px-0">
-                            <i class="fs-4 bi-house"></i> 9.-<span class="ms-1 d-none d-sm-inline">Seleccionr registros
+                            <i class="fs-4 bi-house"></i> 9.-<span class="ms-1 d-none d-sm-inline">Seleccionar registros
                             </span>
                         </a>
                     </li>
@@ -157,6 +157,68 @@
                 Actualizar registros
             </h1>
             <img src="img/Update.jpeg" alt="" width="800px" height="446.5px">
+            <hr>
+            <h1 class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+                Ejemplos
+            </h1>
+            <hr>
+            <h2 class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">Actualizar un registro</h2>
+
+            <pre><code class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+            UPDATE Estudiantes
+            SET nombre = 'Juan Pérez'
+            WHERE idEstudiante = 1;
+            </code></pre>
+            <hr>
+            <h2 class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">Actualizar varias columnas</h2>
+
+            <pre><code class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+            UPDATE Estudiantes
+            SET nombre = 'Carlos Ruiz',
+                edad = 21
+            WHERE idEstudiante = 3;
+            </code></pre>
+            <hr>
+            <h2 class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">Actualizar toda la tabla</h2>
+
+            <pre><code class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+            UPDATE Estudiantes
+            SET edad = 20;
+            </code></pre>
+            <hr>
+            <h2 class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">Actualizar con condicion</h2>
+
+            <pre><code class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+            UPDATE empleados
+            SET salario = salario + 1000
+            WHERE departamento = 'Ventas';
+            </code></pre>
+            <hr>
+            <h2 class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">Actualizar con operadores matematicos</h2>
+
+            <pre><code class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+            UPDATE productos
+            SET stock = stock + 10
+            WHERE id = 5;
+            </code></pre>
+
+            <hr>
+            <h2 class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">Actualizar entre rangos</h2>
+
+            <pre><code class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+            UPDATE empleados
+            SET bono = 1000
+            WHERE salario BETWEEN 3000 AND 5000;
+            </code></pre>
+
+            <hr>
+            <h2 class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">Actualizar usando LIKE</h2>
+
+            <pre><code class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+            UPDATE clientes
+            SET categoria = 'Premium'
+            WHERE nombre LIKE 'Juan%';
+            </code></pre>
         </div>
     </div>
 </div>

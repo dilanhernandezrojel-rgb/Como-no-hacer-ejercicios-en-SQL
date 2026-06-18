@@ -66,7 +66,7 @@
                     </li>
                     <li class="nav-item">
                         <a href="Seleccionar.html" class="nav-link align-middle px-0">
-                            <i class="fs-4 bi-house"></i> 9.-<span class="ms-1 d-none d-sm-inline">Seleccionr registros
+                            <i class="fs-4 bi-house"></i> 9.-<span class="ms-1 d-none d-sm-inline">Seleccionar registros
                             </span>
                         </a>
                     </li>
@@ -170,6 +170,66 @@
             <img src="img/OrderBy/12.jpg" alt="" width="889px" height="500px">
             <img src="img/OrderBy/13.jpg" alt="" width="889px" height="500px">
             <img src="img/OrderBy/14.jpg" alt="" width="889px" height="500px">
+            <hr>
+            <h1 class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+                Ejemplos
+            </h1>
+            <hr>
+            <h2 class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">OrderBy</h2>
+            <hr>
+            <h3 class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">Ascendente (ASC)</h3>
+            <pre><code class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+            SELECT *
+            FROM empleados
+            ORDER BY salario ASC;
+            </code></pre>
+            <hr>
+            <h3 class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">Descendente (DESC)</h3>
+            <pre><code class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+            SELECT *
+            FROM empleados
+            ORDER BY salario DESC;
+            </code></pre>
+            <hr>
+            <h3 class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">Ascendente + Descendente (Por varias columnas)</h3>
+            <pre><code class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+            SELECT *
+            FROM empleados
+            ORDER BY departamento ASC, salario DESC;
+            </code></pre>
+            <hr>
+            <h2 class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">limit</h2>
+            <hr>
+            <h3 class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">Mostrar 5 registros</h3>
+            <pre><code class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+            SELECT *
+            FROM empleados
+            LIMIT 5;
+            </code></pre>
+            <hr>
+            <h3 class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">3 Salarios mas altos (LIMIT + ORDER BY)</h3>
+            <pre><code class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+            SELECT *
+            FROM empleados
+            ORDER BY salario DESC
+            LIMIT 3;
+            </code></pre>
+            <hr>
+            <h2 class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">Offset</h2>
+            <hr>
+            <h3 class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">Saltar los primeros 5 registros</h3>
+            <pre><code class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+            SELECT *
+            FROM empleados
+            OFFSET 5;
+            </code></pre>
+            <hr>
+            <h3 class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">Limit + Offset</h3>
+            <pre><code class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+            SELECT *
+            FROM empleados
+            LIMIT 5 OFFSET 10;
+            </code></pre>
         </div>
     </div>
 </div>
